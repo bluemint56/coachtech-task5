@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <title>お問い合わせ</title>
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="TECHロゴ" class="header-logo">
+    <nav class="header__nav" id="hnav">
+      <ul class="header__nav-list">
+        <li><a href="index.html" class="nav__a">ホーム</a></li>
+        <li><a href="service.html" class="nav__a">事業内容</a></li>
+        <li><a href="news.html" class="nav__a">ニュース</a></li>
+        <li><a href="blog.html" class="nav__a">社員ブログ</a></li>
+        <li><a href="company.html" class="nav__a">会社概要</a></li>
+        <li><a href="recruit.html" class="nav__a">採用情報</a></li>
+        <li><a href="contact.html" class="nav__a">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="nav__menu" id="nav__menu">
+      <span class="menu__line--top"></span>
+      <span class="menu__line--middle"></span>
+      <span class="menu__line--bottom"></span>
+    </div>
+  </header>
+  
+  <div class="first">
+    <div class="top-img">
+      <img src="img/mv.png" alt="ビル群" class="img-pic">
+      <h2 class="top__ttl">お問い合わせ</h2>
+    </div>
+  </div>
+
+  <div class="form-content">
+    <form class="form" name="contact" method="POST">
+      <div class="form-item">
+        <p class="form-item-label">会社名</p>
+        <input type="text" name="company" class="form-item-input">
+      </div>
+      <div class="form-item">
+        <p class="form-item-label">お名前<span>*</span></p>
+        <input type="text" name="name" class="form-item-input">
+      </div>
+      <div class="form-item">
+        <p class="form-item-label">メールアドレス<span>*</span></p>
+        <input type="email" name="email" class="form-item-input">
+      </div>
+      <div class="form-item">
+        <p class="form-item-label">お問い合わせ内容<span>*</span></p>
+        <textarea name="textarea" class="form-item-textarea"></textarea>
+      </div>
+      <input type="submit" class="form-btn" value="お申込み">
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <small class="copyright">
+        &copy; 2020 TECH inc.
+      </small>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="index.html">ホーム</a></li>
+          <li class="footer__nav-item"><a href="service.html">事業内容</a></li>
+          <li class="footer__nav-item"><a href="news.html">ニュース</a></li>
+          <li class="footer__nav-item"><a href="blog.html">社員ブログ</a></li>
+          <li class="footer__nav-item"><a href="company.html">会社概要</a></li>
+          <li class="footer__nav-item"><a href="recruit.html">採用情報</a></li>
+          <li class="footer__nav-item"><a href="contact.html">お問い合わせ</a></li>
+  
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
