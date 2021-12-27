@@ -167,7 +167,7 @@ p {
   /*ハンバーガーメニュー*/
   .nav__a {
     text-decoration: none;
-    color: black;
+    color: inherit;
   }
   header {
     display: flex;
@@ -175,33 +175,35 @@ p {
     position: fixed;
     width: 100%;
     max-width: 100vw;
-    height: 70px;
+    height: 65px;
     background-color: white;
     padding-bottom: 10px;
     z-index: 1;
   }
   .header-logo {
-    width: 8%;
+    width: 6%;
     margin: 20px 30px;
   }
   .header__nav {
     position: absolute;
-    height: 150px;
+    height: 100vh;
     width: 100%;
     left: -100%;
-    background: #e0ffff;
+    top: 50%;
+    background: white;
     transition: 0.7s;
-    font-size: 14px;
+    text-align: center;
+    font-size: 18px;
     font-weight: bold;
   }
   .header__nav-list {
-    margin-top: 100px;
-    margin-left: 20px;
+    padding-top: 80px;
+    display: block;
   }
   .header__nav-list li {
     list-style-type: none;
-    margin-bottom: 30px;
-    margin-left: 5px;
+    margin-top: 50px;
+    color: blue;
   }
   .nav__menu {
     display: inline-block;
@@ -210,14 +212,14 @@ p {
     cursor: pointer;
     position: relative;
     right: 20px;
-    top: 10px;
+    top: 20px;
   }
   .menu__line--top,
   .menu__line--middle,
   .menu__line--bottom {
     display: inline-block;
     width: 100%;
-    height: 3px;
+    height: 4px;
     background-color: black;
     position: absolute;
     transition: 0.5s;
@@ -262,7 +264,7 @@ p {
     position: absolute;
     color: white;
     font-size: 28px;
-    margin: 100px auto 0 auto;
+    margin: 0 auto 0 auto;
   }
 
   /*採用情報*/
@@ -373,5 +375,9 @@ p {
   }
   .footer__nav-item {
     padding-top: 10px;
+  }
+  .footer__nav-item:not(:first-child) {
+    border-left: 2px solid black;
+    padding-left: 5px;
   }
 }
