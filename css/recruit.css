@@ -262,8 +262,7 @@ p {
     position: absolute;
     color: white;
     font-size: 28px;
-    top: 30%;
-    left: 35%;
+    margin: 100px auto 0 auto;
   }
 
   /*採用情報*/
@@ -327,8 +326,8 @@ p {
     padding: 0;
   }
   .contact__btn {
-    margin-top: 30px;
-    margin-left: 35%;
+    margin: 50px auto 0 auto;
+    width: 250px;
   }
   .con-btn {
     text-decoration: none;
@@ -336,7 +335,6 @@ p {
     font-size: 14px;
     font-weight: bold;
     display: block;
-    width: 150px;
     padding: 15px;
     color: white;
     background: red;
@@ -359,25 +357,21 @@ p {
     text-align: center;
   }
   .footer-inner {
-    display: flex;
+    display: block;
     justify-content: space-between;
     padding: 0 20px;
   }
   .copyright {
-    font-size: 10px;
+    font-size: 12px;
     padding-left: 10px;
   }
   .footer__nav-list {
-    display: flex;
+    display: block;
     width: 100%;
     justify-content: center;
     font-size: 8px;
   }
   .footer__nav-item {
-    padding-right: 10px;
-  }
-  .footer__nav-item:not(:first-child) {
-    border-left: 2px solid white;
-    padding-left: 5px;
+    padding-top: 10px;
   }
 }

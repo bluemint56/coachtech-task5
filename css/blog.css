@@ -273,34 +273,40 @@ header {
 
   /*ブログ*/
   .blog-content {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 70px;
   }
   .blog1 {
-    width: 25%;
+    width: 80%;
     padding: 10px;
+    margin: 0 auto 0 auto;
   }
   .blog2 {
-    width: 25%;
+    width: 80%;
     padding: 10px;
+    margin: 0 auto 0 auto;
   }
   .blog3 {
-    width: 25%;
+    width: 80%;
     padding: 10px;
+    margin: 0 auto 0 auto;
   }
   .blog4 {
-    width: 25%;
+    width: 80%;
     padding: 10px;
+    margin: 0 auto 0 auto;
   }
   .blog5 {
-    width: 25%;
+    width: 80%;
     padding: 10px;
+    margin: 0 auto 0 auto;
   }
   .blog6 {
-    width: 25%;
+    width: 80%;
     padding: 10px;
+    margin: 0 auto 0 auto;
   }
   .blog-img {
     width: 100%;
@@ -310,7 +316,7 @@ header {
   }
   .title {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     color: black;
   }
@@ -335,8 +341,8 @@ header {
     font-weight: lighter;
   }
   .contact__btn {
-    margin-top: 50px;
-    margin-left: 35%;
+    margin: 50px auto 0 auto;
+    width: 250px;
   }
   .con-btn {
     text-decoration: none;
@@ -344,7 +350,6 @@ header {
     font-size: 14px;
     font-weight: bold;
     display: block;
-    width: 150px;
     padding: 15px;
     color: white;
     background: red;
@@ -367,25 +372,21 @@ header {
     text-align: center;
   }
   .footer-inner {
-    display: flex;
+    display: block;
     justify-content: space-between;
     padding: 0 20px;
   }
   .copyright {
-    font-size: 10px;
+    font-size: 12px;
     padding-left: 10px;
   }
   .footer__nav-list {
-    display: flex;
+    display: block;
     width: 100%;
     justify-content: center;
     font-size: 8px;
   }
   .footer__nav-item {
-    padding-right: 10px;
-  }
-  .footer__nav-item:not(:first-child) {
-    border-left: 2px solid white;
-    padding-left: 5px;
+    padding-top: 10px;
   }
 }

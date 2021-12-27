@@ -574,9 +574,10 @@ header {
     text-align: center;
   }
   .service1 {
-    display: inline-block;
-    width: 40%;
-    margin-right: 10px;
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
   .service-pic1 {
     width: 100%;
@@ -592,9 +593,10 @@ header {
     line-height: 1.5;
   }
   .service2 {
-    display: inline-block;
-    width: 40%;
-    margin-left: 10px;
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
   .service-pic2 {
     width: 100%;
@@ -610,9 +612,10 @@ header {
     line-height: 1.5;
   }
   .service3 {
-    display: inline-block;
-    width: 40%;
-    margin-right: 10px;
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
   .service-pic3 {
     width: 100%;
@@ -628,9 +631,10 @@ header {
     line-height: 1.5;
   }
   .service4 {
-    display: inline-block;
-    width: 40%;
-    margin-left: 10px;
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
   .service-pic4 {
     width: 100%;
@@ -646,9 +650,9 @@ header {
     line-height: 1.5;
   }
   .service__btn {
-    margin-top: 70px;
-    margin-left: 35%;
+    margin: 70px auto 0 auto;
     padding-bottom: 30px;
+    width: 200px;
   }
   .s-btn {
     text-decoration: none;
@@ -656,7 +660,6 @@ header {
     font-size: 14px;
     font-weight: bold;
     display: block;
-    width: 150px;
     padding: 15px;
     color: white;
     background: red;
@@ -738,25 +741,26 @@ header {
     text-align: center;
   }
   .blog1 {
-    width: 25%;
-    display: inline-block;
+    width: 80%;
+    display: block;
+    margin: 5px auto 0 auto;
   }
   .blog2 {
-    width: 25%;
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 80%;
+    display: block;
+    margin: 5px auto 0 auto;
   }
   .blog3 {
-    width: 25%;
-    display: inline-block;
+    width: 80%;
+    display: block;
+    margin: 5px auto 0 auto;
   }
   .blog__date {
     text-align: left;
     padding-top: 5px;
   }
   .blog__p-ttl {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     font-size: 18px;
     padding-top: 5px;
@@ -768,9 +772,9 @@ header {
     opacity: 0.7;
   }
   .blog__btn {
-    margin-top: 30px;
-    margin-left: 35%;
+    margin: 30px auto 0 auto;
     padding-bottom: 30px;
+    width: 200px;
   }
   .b-btn {
     text-decoration: none;
@@ -778,7 +782,6 @@ header {
     font-size: 14px;
     font-weight: bold;
     display: block;
-    width: 200px;
     padding: 15px;
     color: white;
     background: red;
@@ -850,8 +853,8 @@ header {
     font-weight: lighter;
   }
   .contact__btn {
-    margin-top: 50px;
-    margin-left: 35%;
+    margin: 50px auto 0 auto;
+    width: 250px;
   }
   .con-btn {
     text-decoration: none;
@@ -859,7 +862,6 @@ header {
     font-size: 14px;
     font-weight: bold;
     display: block;
-    width: 150px;
     padding: 15px;
     color: white;
     background: red;
@@ -882,7 +884,7 @@ header {
     text-align: center;
   }
   .footer-inner {
-    display: flex;
+    display: block;
     justify-content: space-between;
     padding: 0 20px;
   }
@@ -891,16 +893,12 @@ header {
     padding-left: 10px;
   }
   .footer__nav-list {
-    display: flex;
+    display: block;
     width: 100%;
     justify-content: center;
     font-size: 8px;
   }
   .footer__nav-item {
-    padding-right: 10px;
-  }
-  .footer__nav-item:not(:first-child) {
-    border-left: 2px solid white;
-    padding-left: 5px;
+    padding-top: 10px;
   }
 }
