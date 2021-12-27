@@ -1,81 +1,32 @@
 /*ヘッダー*/
-.nav__a {
+.header__nav-list a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  color: black;
   position: fixed;
-  width: 100%;
-  height: 65px;
   background-color: white;
-  padding-bottom: 10px;
   z-index: 1;
+  width: 100%;
 }
 .header-logo {
-  width: 6%;
-  margin: 20px 30px;
-}
-.header__nav {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  left: -100%;
-  background: #e0ffff;
-  transition: 0.7s;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
+  width: 10%;
+  padding-left: 10px;
 }
 .header__nav-list {
-  padding-top: 80px;
+  display: flex;
+  font-weight: bold;
 }
 .header__nav-list li {
-  list-style-type: none;
-  margin-top: 50px;
+  margin-right: 10px;
 }
 .nav__menu {
-  display: inline-block;
-  width: 36px;
-  height: 32px;
-  cursor: pointer;
-  position: relative;
-  right: 20px;
-  top: 20px;
-}
-.menu__line--top,
-.menu__line--middle,
-.menu__line--bottom {
-  display: inline-block;
-  width: 100%;
-  height: 4px;
-  background-color: black;
-  position: absolute;
-  transition: 0.5s;
-}
-.menu__line--top {
-  top: 0;
-}
-.menu__line--middle {
-  top: 14px;
-}
-.menu__line--bottom {
-  bottom: 0;
-}
-.nav__menu.open span:nth-of-type(1) {
-  top: 14px;
-  transform: rotate(45deg);
-}
-.nav__menu.open span:nth-of-type(2) {
-  opacity: 0;
-}
-.nav__menu.open span:nth-of-type(3) {
-  top: 14px;
-  transform: rotate(-45deg);
-}
-.in {
-  transform: translateX(100%);
+  display: none;
 }
 
 /*トップ*/
@@ -174,97 +125,179 @@ header {
 
 /*レスポンシブデザイン ブレークポイント:768px*/
 @media screen and (max-width: 768px) {
+  /*ハンバーガーメニュー*/
+  .nav__a {
+    text-decoration: none;
+    color: black;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    max-width: 100vw;
+    height: 70px;
+    background-color: white;
+    padding-bottom: 10px;
+    z-index: 1;
+  }
+  .header-logo {
+    width: 8%;
+    margin: 20px 30px;
+  }
+  .header__nav {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    left: -100%;
+    background: #e0ffff;
+    transition: 0.7s;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .header__nav-list {
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+  .header__nav-list li {
+    list-style-type: none;
+    margin-bottom: 30px;
+    margin-left: 5px;
+  }
+  .nav__menu {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+    top: 10px;
+  }
+  .menu__line--top,
+  .menu__line--middle,
+  .menu__line--bottom {
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    transition: 0.5s;
+  }
+  .menu__line--top {
+    top: 0;
+  }
+  .menu__line--middle {
+    top: 14px;
+  }
+  .menu__line--bottom {
+    bottom: 0;
+  }
+  .nav__menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+  .nav__menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .nav__menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+  .in {
+    transform: translateX(100%);
+  }
+
   /*トップ*/
-.first {
-  width: 100%;
-  margin-bottom: 70px;
-}
-.img-pic {
-  width: 100%;
-  height: 50vh;
-  object-fit: cover;
-  object-position: center;
-  position: relative;
-}
-.top__ttl {
-  position: absolute;
-  color: white;
-  font-size: 28px;
-  top: 30%;
-  left: 35%;
-}
+  .first {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .img-pic {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+  }
+  .top__ttl {
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    top: 30%;
+    left: 35%;
+  }
 
-/*お問い合わせ*/
-.form {
-  width: 70%;
-  margin: 20px auto;
-}
-.form-item {
-  padding: 24px 0;
-  width: 100%;
-}
-.form-item-label {
-  width: 100%;
-  font-weight: bold;
-  padding-bottom: 8px;
-}
-.form-item-label span {
-  color: #dc143c;
-  padding-left: 5px;
-}
-.form-item-input {
-  border: 1px solid #a9a9a9;
-  height: 25px;
-  width: 100%;
-}
-.form-item-textarea {
-  border: 1px solid #a9a9a9;
-  height: 150px;
-  width: 100%;
-}
-.form-btn {
-  display: block;
-  cursor: pointer;
-  background: black;
-  color: white;
-  width: 200px;
-  border: none;
-  padding: 10px 0;
-  margin: 0 auto 70px auto;
-}
+  /*お問い合わせ*/
+  .form {
+    width: 70%;
+    margin: 20px auto;
+  }
+  .form-item {
+    padding: 24px 0;
+    width: 100%;
+  }
+  .form-item-label {
+    width: 100%;
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+  .form-item-label span {
+    color: #dc143c;
+    padding-left: 5px;
+  }
+  .form-item-input {
+    border: 1px solid #a9a9a9;
+    height: 25px;
+    width: 100%;
+  }
+  .form-item-textarea {
+    border: 1px solid #a9a9a9;
+    height: 150px;
+    width: 100%;
+  }
+  .form-btn {
+    display: block;
+    cursor: pointer;
+    background: black;
+    color: white;
+    width: 200px;
+    border: none;
+    padding: 10px 0;
+    margin: 0 auto 70px auto;
+  }
 
-/*フッター*/
-.footer__nav-item a {
-  text-decoration: none;
-  color: inherit;
-}
-.footer {
-  width: 100%;
-  background-color: black;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-.copyright {
-  font-size: 10px;
-  padding-left: 10px;
-}
-.footer__nav-list {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-size: 8px;
-}
-.footer__nav-item {
-  padding-right: 10px;
-}
-.footer__nav-item:not(:first-child) {
-  border-left: 2px solid white;
-  padding-left: 5px;
-}
+  /*フッター*/
+  .footer__nav-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .copyright {
+    font-size: 10px;
+    padding-left: 10px;
+  }
+  .footer__nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 8px;
+  }
+  .footer__nav-item {
+    padding-right: 10px;
+  }
+  .footer__nav-item:not(:first-child) {
+    border-left: 2px solid white;
+    padding-left: 5px;
+  }
 }
