@@ -190,12 +190,15 @@ header {
   height: 350px;
 }
 .news__ttl {
-  display: inline-block;
   color: white;
   font-size: 28px;
   padding-top: 50px;
   padding-left: 100px;
   padding-bottom: 25px;
+}
+.news-title {
+  display: flex;
+  justify-content: space-between;
 }
 .news__content,
 .news__content2,
@@ -225,18 +228,16 @@ header {
   margin-bottom: 10px;
 }
 .news__btn {
-  display: inline-block;
-  padding-bottom: 15px;
-  padding-right: 10px;
-  margin-left: 50%;
   width: 160px;
+  height: 5%;
+  margin-top: 4%;
+  margin-right: 5%;
 }
 .n-btn {
   text-decoration: none;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  display: block;
   padding: 15px;
   color: white;
   background: red;
