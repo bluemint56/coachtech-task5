@@ -44,9 +44,12 @@ header {
 .top__ttl {
   position: absolute;
   color: white;
-  font-size: 40px;
+  font-size: 45px;
   top: 30%;
-  left: 40%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 /*サービス*/
@@ -117,8 +120,8 @@ header {
   font-weight: lighter;
 }
 .contact__btn {
-  margin-top: 50px;
-  margin-left: 40%;
+  margin: 50px auto 0 auto;
+  width: 250px;
 }
 .con-btn {
   text-decoration: none;
@@ -126,7 +129,6 @@ header {
   font-size: 14px;
   font-weight: bold;
   display: block;
-  width: 250px;
   padding: 15px;
   color: white;
   background: red;
@@ -191,15 +193,15 @@ header {
   z-index: 1;
 }
 .header-logo {
-  width: 6%;
-  margin: 20px 30px;
+  width: 15%;
+  margin: 30px 30px 20px 30px;
 }
 .header__nav {
   position: absolute;
   height: 100vh;
   width: 100%;
   left: -100%;
-  top: 50%;
+  top: 30%;
   background: white;
   transition: 0.7s;
   text-align: center;
@@ -275,9 +277,10 @@ header {
   .top__ttl {
     position: absolute;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     top: 30%;
-    left: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   /*サービス*/
@@ -317,7 +320,7 @@ header {
     margin-bottom: 70px;
   }
   .s-pic {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
   .s-text h2 {
@@ -376,7 +379,46 @@ header {
     background-color: black;
     color: white;
     padding: 20px 0;
-    text-align: center;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-around;
+  }
+  .copyright {
+    font-size: 12px;
+    padding-left: 10px;
+    width: 30%;
+    margin: auto 0 auto 0;
+  }
+  .footer__nav-list {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+  }
+  .footer__nav-item {
+    display: block;
+    padding-top: 20px;
+  }
+  .footer__nav-item:not(:first-child) {
+    border-left: 2px solid black;
+    padding-left: 5px;
+  }
+}
+
+/*レスポンシブデザイン ブレークポイント:400px*/
+@media screen and (max-width: 400px){
+  .footer__nav-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
   }
   .footer-inner {
     display: block;
@@ -391,12 +433,12 @@ header {
     display: block;
     width: 100%;
     justify-content: center;
-    font-size: 8px;
+    font-size: 10px;
   }
   .footer__nav-item {
-    padding-top: 10px;
+    padding-top: 15px;
   }
-   .footer__nav-item:not(:first-child) {
+  .footer__nav-item:not(:first-child) {
   border-left: 2px solid black;
   padding-left: 5px;
 }
